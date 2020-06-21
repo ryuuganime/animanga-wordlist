@@ -1,0 +1,11 @@
+= Sites Wordlist =
+
+{|
+! Sites
+! Link
+! Word Count
+|-
+|Ryuuganime
+|[https://ryuuganime.my.id Link]
+| style="text-align:center;" | '''253'''
+|}

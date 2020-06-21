@@ -3,12 +3,13 @@
 Designed for custom dictionary. This repository allows user to add Japanese (and overseas, in the future) animations, comics, novels, characters, casts, producers, and studios words to their personalized spell correction extension nor app. At the moment, we only include romaji (romanized) script for wordlist; Kanji and other script may be listed in the future.
 
 This repo consists at least, so far:
-* 14349 [[/anime|anime]] titles,
-* 50391 [[/manga|manga]] titles,
-* 518 [[/studios|studios]],
-* <nowiki>#####</nowiki> [[/producers|producers]],
-* 86177 [[/charas|characters]], and
-* <nowiki>#####</nowiki> [[/casts|seiyuus/casts]].
+* '''14349''' [[/anime|anime]] titles,
+* '''50391''' [[/manga|manga]] titles,
+* '''518''' [[/studios|studios]],
+* '''<nowiki>#####</nowiki>''' [[/producers|producers]],
+* '''86177''' [[/charas|characters]],
+* '''<nowiki>#####</nowiki>''' [[/casts|seiyuus/casts]], and
+* '''253''' [[/sites|official streaming and information sites]] indexed.
 
 ::'''NOTE''': Those dictionaries is duplicate-free and directly scraped from sites without filtering. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
 
@@ -25,6 +26,7 @@ Here is list sites we using for scraping data:
 * Producers = ''to be included''
 * Characters = AniDB (Organization names included)
 * Seiyuus/Casts = ''to be included''
+* Sites = Ryuuganime, [https://www.justwatch.com/ JustWatch], and [https://github.com/otakulogy/anime-streaming otakulogy/anime-streaming]
 
 Latest updates on June 21, 2020, 5:33 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
 
