@@ -10,7 +10,7 @@ This repo consists at least, so far:
 * 86177 [[/charas|characters]], and
 * <nowiki>#####</nowiki> [[/casts|seiyuus/casts]].
 
-:'''NOTE''': Those dictionaries is duplicate-free and directly scraped from sites without filtering. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
+::'''NOTE''': Those dictionaries is duplicate-free and directly scraped from sites without filtering. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
 
 __TOC__
 
