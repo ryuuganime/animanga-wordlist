@@ -1,0 +1,11 @@
+= Manga Wordlist =
+
+{|
+! Sites
+! Link
+! Word Count
+|-
+|MyAnimeList
+|[https://myanimelist.net Link]
+| style="text-align:center;" | '''50391'''
+|}

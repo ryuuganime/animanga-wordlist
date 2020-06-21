@@ -1,0 +1,11 @@
+= Characters Wordlist =
+
+{|
+! Sites
+! Link
+! Word Count
+|-
+|AniDB
+|[https://anidb.net Link]
+| style="text-align:center;" | '''86177'''
+|}

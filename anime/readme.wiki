@@ -1,0 +1,15 @@
+= Anime Wordlist =
+
+{|
+! Sites
+! Link
+! Word Count
+|-
+|AniDB
+|[https://anidb.net Link]
+| style="text-align:center;" | 11225
+|-
+|AniSearch
+|[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
+| style="text-align:center;" | '''14349'''
+|}

@@ -1,0 +1,42 @@
+= Ryuuganime animanga-wordlist =
+
+Designed for custom dictionary. This repository allows user to add Japanese (and overseas, in the future) animations, comics, novels, characters, casts, producers, and studios words to their personalized spell correction extension nor app. At the moment, we only include romaji (romanized) script for wordlist; Kanji and other script may be listed in the future.
+
+This repo consists at least, so far:
+* 14349 [[/anime|anime]] titles,
+* 50391 [[/manga|manga]] titles,
+* 518 [[/studios|studios]],
+* <nowiki>#####</nowiki> [[/producers|producers]],
+* 86177 [[/charas|characters]], and
+* <nowiki>#####</nowiki> [[/casts|seiyuus/casts]].
+
+:'''NOTE''': Those dictionaries is duplicate-free and directly scraped from sites without filtering. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
+
+__TOC__
+
+== Scraping Information ==
+
+We currently scraping those words directly from sites using [https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn Web Scraper] extension.
+
+Here is list sites we using for scraping data:
+* Anime = AniDB, AniSearch
+* Manga = MyAnimeList, AniSearch
+* Studio = Anime-Planet
+* Producers = ''to be included''
+* Characters = AniDB (Organization names included)
+* Seiyuus/Casts = ''to be included''
+
+Latest updates on June 21, 2020, 5:33 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
+
+== File Information ==
+
+We using plain text format (<code>.txt</code>) for dictionaries, and MediaWiki file format (<code>.wiki</code>, <code>.mediawiki</code>) for README and some important information. JSON files are intended to be used for the machines only.
+
+== License ==
+
+This repository is under [[License|MIT License]]. You can use, modify, and distribute dictionary AS IS, without warranty of any kind and liability. (C) 2020 Ryuuganime.
+
+In a nutshell, you are allowed, <ins>but not limited to</ins>:
+* Set this repo as submodule for your repository,
+* Distribute dictionary,
+* etc.

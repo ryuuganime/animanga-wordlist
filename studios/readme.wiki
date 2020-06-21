@@ -1,0 +1,11 @@
+= Studio Wordlist =
+
+{|
+! Sites
+! Link
+! Word Count
+|-
+|Anime-Planet
+|[https://anime-planet.com Link]
+| style="text-align:center;" | '''518'''
+|}
