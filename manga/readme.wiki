@@ -7,5 +7,9 @@
 |-
 |MyAnimeList
 |[https://myanimelist.net Link]
-| style="text-align:center;" | '''50391'''
+| style="text-align:center;" | 50391
+|-
+|AniSearch
+|[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
+| style="text-align:center;" | '''52887'''
 |}

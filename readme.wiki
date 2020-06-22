@@ -4,14 +4,14 @@ Designed for custom dictionary. This repository allows user to add Japanese (and
 
 This repo consists at least, so far:
 * '''14349''' [[/anime|anime]] titles,
-* '''50391''' [[/manga|manga]] titles,
+* '''52887''' [[/manga|manga]] titles,
 * '''518''' [[/studios|studios]],
 * '''<nowiki>#####</nowiki>''' [[/producers|producers]],
 * '''86177''' [[/charas|characters]],
 * '''<nowiki>#####</nowiki>''' [[/casts|seiyuus/casts]], and
 * '''253''' [[/sites|official streaming and information sites]] indexed.
 
-::'''NOTE''': Those dictionaries is duplicate-free and directly scraped from sites without filtering. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
+::'''NOTE''': <ins>Those dictionaries is duplicate-free and directly scraped from sites without filtering</ins>. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
 
 __TOC__
 
@@ -19,7 +19,7 @@ __TOC__
 
 We currently scraping those words directly from sites using [https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn Web Scraper] extension.
 
-Here is list sites we using for scraping data:
+Here is list sites we're using for scraping data:
 * Anime = AniDB, AniSearch
 * Manga = MyAnimeList, AniSearch
 * Studio = Anime-Planet
@@ -28,7 +28,7 @@ Here is list sites we using for scraping data:
 * Seiyuus/Casts = ''to be included''
 * Sites = Ryuuganime, [https://www.justwatch.com/ JustWatch], and [https://github.com/otakulogy/anime-streaming otakulogy/anime-streaming]
 
-Latest updates on June 21, 2020, 10:50 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
+Latest updates on June 21, 2020, 11:50 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
 
 == File Information ==
 
