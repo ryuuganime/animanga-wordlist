@@ -129,6 +129,7 @@ Investigation Discovery
 iQiyi
 iTunes
 Japanese Animated Film Classic
+JustWatch
 Kanopy
 Kazé
 Kinopoisk
@@ -177,6 +178,7 @@ Qello Concerts
 Quibi
 R18.com
 Realeyz
+Reelgood
 RetroCrush
 Revry
 Ryuuganime
