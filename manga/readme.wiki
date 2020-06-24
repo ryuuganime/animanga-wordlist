@@ -11,5 +11,9 @@
 |-
 |AniSearch
 |[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
-| style="text-align:center;" | '''52887'''
+| style="text-align:center;" | 52887
+|-
+|Ryuuganime .rydict
+|[https://ryuuganime.my.id Link]
+| style="text-align:center;" | '''76090'''
 |}
