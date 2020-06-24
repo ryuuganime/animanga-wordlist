@@ -7,5 +7,5 @@
 |-
 |AniDB
 |[https://anidb.net Link]
-| style="text-align:center;" | '''86177'''
+| style="text-align:center;" | [[aniDb-062020.txt|'''86177''']]
 |}

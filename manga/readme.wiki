@@ -5,15 +5,15 @@
 ! Link
 ! Word Count
 |-
-|MyAnimeList
-|[https://myanimelist.net Link]
-| style="text-align:center;" | 50391
-|-
 |AniSearch
 |[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
-| style="text-align:center;" | 52887
+| style="text-align:center;" | [[aniSearch-062020.txt|52887]]
+|-
+|MyAnimeList
+|[https://myanimelist.net Link]
+| style="text-align:center;" | [[myAnimeList-062020.txt|50391]]
 |-
 |Ryuuganime .rydict
 |[https://ryuuganime.my.id Link]
-| style="text-align:center;" | '''76090'''
+| style="text-align:center;" | [[manga-062020.rydict|'''76090''']]
 |}
