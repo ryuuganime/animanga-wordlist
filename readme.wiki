@@ -3,8 +3,8 @@
 Designed for custom dictionary. This repository allows user to add Japanese (and overseas, in the future) animations, comics, novels, characters, casts, producers, and studios words to their personalized spell correction extension nor app. At the moment, we only include romaji (romanized) script for wordlist; Kanji and other script may be listed in the future.
 
 This repo consists at least, so far:
-* '''14349''' [[/anime|anime]] titles,
-* '''52887''' [[/manga|manga]] titles,
+* '''28414''' [[/anime|anime]] titles,
+* '''76090''' [[/manga|manga]] titles,
 * '''518''' [[/studios|studios]],
 * '''<nowiki>#####</nowiki>''' [[/producers|producers]],
 * '''86177''' [[/charas|characters]],
@@ -20,7 +20,7 @@ __TOC__
 We currently scraping those words directly from sites using [https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn Web Scraper] extension.
 
 Here is list sites we're using for scraping data:
-* Anime = AniDB, AniSearch
+* Anime = AniDB, AniSearch, [https://github.com/manami-project/anime-offline-database manami-project/anime-offline-database]
 * Manga = MyAnimeList, AniSearch
 * Studio = Anime-Planet
 * Producers = ''to be included''
@@ -32,7 +32,11 @@ Latest updates on June 21, 2020, 11:50 PM Western Indonesian Time (UTC+7, Asia/J
 
 == File Information ==
 
-We using plain text format (<code>.txt</code>) for dictionaries, and MediaWiki file format (<code>.wiki</code>, <code>.mediawiki</code>) for README and some important information. JSON files are intended to be used for the machines only.
+We using plain text format (<code>.txt</code> and <a href="#About_rydict"><code>.rydict</code></a>) for dictionaries, and MediaWiki file format (<code>.wiki</code>, <code>.mediawiki</code>) for README and some important information. JSON and YAML files are intended to be used for the machines only.
+
+=== About .rydict ===
+
+<code>.rydict</code> is a self-curated wordlist collected from several sources and implement into one file by Ryuuganime itself using plain text format (<code>.txt</code>). Basically helps dictionary/spelling checker extension/app from overhaul by the resources, so it can reduce a lot of memory consumed by the app/extension.
 
 == License ==
 

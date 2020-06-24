@@ -9,7 +9,15 @@
 |[https://anidb.net Link]
 | style="text-align:center;" | 11225
 |-
+|anime-offline-database
+|[https://github.com/manami-project/anime-offline-database Link (GitHub)]
+| style="text-align:center;" | 24321
+|-
 |AniSearch
 |[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
-| style="text-align:center;" | '''14349'''
+| style="text-align:center;" | 14349
+|-
+|Ryuuganime .rydict
+|[https://ryuuganime.my.id Link]
+| style="text-align:center;" | '''28414'''
 |}
