@@ -36,9 +36,9 @@ We using plain text format (<code>.txt</code>) for dictionaries, and MediaWiki f
 
 == License ==
 
-This repository is under [[License|MIT License]]. You can use, modify, and distribute dictionary AS IS, without warranty of any kind and liability. (C) 2020 Ryuuganime.
+This repository is under [[License|GNU Affero General Public License v3.0]]. You can use, modify, and distribute dictionary AS IS, without warranty of any kind and liability, and must using the same license on both end.
 
-In a nutshell, you are allowed, <ins>but not limited to</ins>:
+In a nutshell, you are still allowed, <ins>but not limited to</ins>:
 * Set this repo as submodule for your repository,
 * Distribute dictionary,
 * etc.
