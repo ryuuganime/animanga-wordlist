@@ -3,7 +3,7 @@
 Designed for custom dictionary. This repository allows user to add Japanese (and overseas, in the future) animations, comics, novels, characters, casts, producers, and studios words to their personalized spell correction extension nor app. At the moment, we only include romaji (romanized) script for wordlist; Kanji and other script may be listed in the future.
 
 This repo consists at least, so far:
-* '''28414''' [[/anime|anime]] titles,
+* '''32843''' [[/anime|anime]] titles,
 * '''94644''' [[/manga|manga]] titles,
 * '''518''' [[/studios|studios]],
 * '''<nowiki>#####</nowiki>''' [[/producers|producers]],
@@ -12,7 +12,7 @@ This repo consists at least, so far:
 * '''253''' [[/sites|official streaming and information sites]] indexed.
 
 ;'''NOTE'''
-: <ins>Those dictionaries is duplicate-free and directly scraped from sites without filtering</ins>. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
+: <ins>Those dictionaries is duplicate-free and directly scraped from sites without filtering</ins>, and some data can be exact same each other since each site do have their own romanization rule for title. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
 
 __TOC__
 
@@ -22,9 +22,9 @@ We currently scraping those words directly from sites using [https://chrome.goog
 
 Here is list of sites we're using for scraping data and other information:
 * '''Anime'''
-*:AniDB, Anime-Planet, AniSearch, [https://github.com/manami-project/anime-offline-database manami-project/anime-offline-database], MyAnimeList, Shikimori
+*:AniDB, Anime-Planet, AniSearch, [https://github.com/manami-project/anime-offline-database manami-project/anime-offline-database], MyAnimeList
 * '''Manga'''
-*:Anime-Planet, AniSearch, MyAnimeList, Shikimori
+*:Anime-Planet, AniSearch, MyAnimeList
 * '''Studio'''
 *:Anime-Planet
 * '''Producers'''
@@ -36,7 +36,7 @@ Here is list of sites we're using for scraping data and other information:
 * '''Sites'''
 *:Ryuuganime, [https://www.justwatch.com/ JustWatch], [https://reelgood.com/ Reelgood], [https://github.com/otakulogy/anime-streaming otakulogy/anime-streaming], [https://github.com/MALSync/MALSync MAL-Sync], [https://docs.zoho.com.au/sheet/open/stzn58acc24611fea414e8901724ff4510fe8 The /r/AnimePiracy Index]
 
-Latest update on June 25, 2020, 8:18 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
+Latest update on June 25, 2020, 9:29 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
 
 == File Information ==
 

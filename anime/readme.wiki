@@ -13,11 +13,15 @@
 |[https://github.com/manami-project/anime-offline-database Link (GitHub)]
 | style="text-align:center;" | [[aod-062020.txt|24321]]
 |-
+|Anime-Planet
+|[https://anime-planet.com Link]
+| style="text-align:center;" | [[animePlanet-062020.txt|14613]]
+|-
 |AniSearch
 |[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
 | style="text-align:center;" | [[aniSearch-062020.txt|14349]]
 |-
 |Ryuuganime .rydict
 |[https://ryuuganime.my.id Link]
-| style="text-align:center;" | [[anime-062020.rydict|'''28414''']]
+| style="text-align:center;" | [[anime-062020.rydict|'''32843''']]
 |}
