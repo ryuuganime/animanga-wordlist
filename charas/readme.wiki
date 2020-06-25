@@ -5,7 +5,15 @@
 ! Link
 ! Word Count
 |-
+|AniSearch
+|[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
+| style="text-align:center;" | [[aniSearch-062020.txt|65000]]
+|-
 |AniDB
 |[https://anidb.net Link]
-| style="text-align:center;" | [[aniDb-062020.txt|'''86177''']]
+| style="text-align:center;" | [[aniDb-062020.txt|86177]]
+|-
+|Ryuuganime .rydict
+|[https://ryuuganime.my.id]
+| style="text-align:center;" | [[charas-062020.rydict|'''116972''']]
 |}

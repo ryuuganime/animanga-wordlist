@@ -3,11 +3,11 @@
 Designed for custom dictionary. This repository allows user to add Japanese (and overseas, in the future) animations, comics, novels, characters, casts, producers, and studios words to their personalized spell correction extension nor app. At the moment, we only include romaji (romanized) script for wordlist; Kanji and other script may be listed in the future.
 
 This repo consists at least, so far:
-* '''32843''' [[/anime|anime]] titles,
+* '''33283''' [[/anime|anime]] titles,
 * '''94644''' [[/manga|manga]] titles,
 * '''518''' [[/studios|studios]],
 * '''<nowiki>#####</nowiki>''' [[/producers|producers]],
-* '''86177''' [[/charas|characters]],
+* '''116972''' [[/charas|characters]],
 * '''<nowiki>#####</nowiki>''' [[/casts|seiyuus/casts]], and
 * '''253''' [[/sites|official streaming and information sites]] indexed.
 

@@ -21,7 +21,11 @@
 |[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
 | style="text-align:center;" | [[aniSearch-062020.txt|14349]]
 |-
+|MyAnimeList
+|[https://myanimelist.net Link]
+| style="text-align:center;" | [[myAnimeList-062020.txt|16791]]
+|-
 |Ryuuganime .rydict
 |[https://ryuuganime.my.id Link]
-| style="text-align:center;" | [[anime-062020.rydict|'''32843''']]
+| style="text-align:center;" | [[anime-062020.rydict|'''33283''']]
 |}
