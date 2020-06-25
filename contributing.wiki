@@ -15,6 +15,7 @@ This project and everyone participating in it is governed by the [[CODE_OF_CONDU
 * Microsoft Office 365 Excel for removing duplicates and sorting as A-Z.
 * [https://www.gunamoi.com.au/soft/savejson2csv/index.html Gunamoi Software SaveJson2CSV] for converting from JSON to CSV (ANSI encoding).
 * [https://code.visualstudio.com/ Microsoft Visual Studio Code] for MediaWiki editing.
+* Ron's CSV Editor for CSV editor.
 
 === Sites Accessibility ===
 As we mentioned on [[readme.wiki]], we using several website for scraping data. Make sure you have an access to the site, or use API to access.
@@ -35,6 +36,11 @@ This is a table which sites are being and can not be used by this repository:
 |https://anilist.co
 |''Work in Progress''
 |Need to use API for scraping
+|-
+|anime-offline-database
+|https://github.com/manami-project/anime-offline-database
+|[[/anime|anime]]
+|Convert from JSON to CSV
 |-
 |Anime-Planet
 |https://anime-planet.com
@@ -76,22 +82,20 @@ This is a table which sites are being and can not be used by this repository:
 
 === Cloning Repository ===
 To clone this repository you need [https://git-scm.com/downloads Git] installed on your end and the repository need to be forked to your GitHub account. From your command line:
- '''git''' <nowiki>clone https://github.com/<YOUR USERNAME>/animanga-wordlist</nowiki>
+ git <nowiki>clone https://github.com/<YOUR USERNAME>/animanga-wordlist</nowiki>
 
 === Naming a File ===
 There is simple guideline for naming a file:
 <pre>
 category/siteName-date.ext
 </pre>
-Where:
+'''Note''':
 ;category
-: Defining which data are scraped of what category.
-: Available arguments:
+: Defining which data are scraped of what category.<br/>Available arguments:
 :: <code>anime</code>, <code>casts</code>, <code>charas</code>, <code>manga</code>, <code>producers</code>, <code>sites</code>, and <code>studios</code>.
 
 ;siteName
-: Defining which site used for scraping data. Using [https://en.wikipedia.org/wiki/Camel_case camelCase].
-: Available arguments, at the moment:
+: Defining which site used for scraping data. Using [https://en.wikipedia.org/wiki/Camel_case camelCase].<br/>Available arguments, at the moment:
 :: <code>aniDb</code>, <code>aniList</code>, <code>animePlanet</code>, <code>animeNewsNetwork</code>, <code>aniSearch</code>, <code>aod</code>, <code>kitsu</code>, <code>myAnimeList</code>, <code>notifyMoe</code>, and <code>shikimori</code>.
 
 ;date
@@ -108,8 +112,18 @@ We commonly use those for prefix:
 *<code>Add</code>
 *:when file is untracked by git.
 *<code>Modify</code> or <code>Fix</code>
-*:when there some line changed by previous.
+*:when there some lines modified from previous.
 *<code>Batch update</code>
 *:when there are plenty of file untracked by git.
 *<code>Update</code>
 *:when some information updated.
+
+=== Pulling a Merge Request ===
+
+# Make sure you have required to naming your commit based on <a href="#Commit_Changes">Commit Changes</a> guideline.
+# Name your pull request as<br/><pre>Detail: Comment</pre>'''Note''':
+#; Detail
+#::Defining what the purpose of this pull request.<br/>Available arguments, at the moment:
+#:::<code>Definition</code>, <code>Category</code>, <code>Fix</code>
+# Click on the green "Send pull request" button to finish creating the pull request.
+# You should now see an open pull request.
