@@ -11,7 +11,8 @@ This repo consists at least, so far:
 * '''<nowiki>#####</nowiki>''' [[/casts|seiyuus/casts]], and
 * '''253''' [[/sites|official streaming and information sites]] indexed.
 
-::'''NOTE''': <ins>Those dictionaries is duplicate-free and directly scraped from sites without filtering</ins>. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
+;'''NOTE'''
+: <ins>Those dictionaries is duplicate-free and directly scraped from sites without filtering</ins>. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
 
 __TOC__
 
@@ -19,16 +20,23 @@ __TOC__
 
 We currently scraping those words directly from sites using [https://chrome.google.com/webstore/detail/web-scraper/jnhgnonknehpejjnehehllkliplmbmhn Web Scraper] extension.
 
-Here is list sites we're using for scraping data:
-* Anime = AniDB, AniSearch, [https://github.com/manami-project/anime-offline-database manami-project/anime-offline-database]
-* Manga = MyAnimeList, AniSearch
-* Studio = Anime-Planet
-* Producers = ''to be included''
-* Characters = AniDB (Organization names included)
-* Seiyuus/Casts = ''to be included''
-* Sites = Ryuuganime, [https://www.justwatch.com/ JustWatch], [https://reelgood.com/ Reelgood], and [https://github.com/otakulogy/anime-streaming otakulogy/anime-streaming]
+Here is list of sites we're using for scraping data and other information:
+* '''Anime'''
+*:AniDB, Anime-Planet, AniSearch, [https://github.com/manami-project/anime-offline-database manami-project/anime-offline-database], MyAnimeList, Shikimori
+* '''Manga'''
+*:Anime-Planet, AniSearch, MyAnimeList, Shikimori
+* '''Studio'''
+*:Anime-Planet
+* '''Producers'''
+*:''to be included''
+* '''Characters'''
+*:AniDB (Organization names included), AniSearch
+* '''Seiyuus/Casts'''
+*:''to be included''
+* '''Sites'''
+*:Ryuuganime, [https://www.justwatch.com/ JustWatch], [https://reelgood.com/ Reelgood], [https://github.com/otakulogy/anime-streaming otakulogy/anime-streaming], [https://github.com/MALSync/MALSync MAL-Sync], [https://docs.zoho.com.au/sheet/open/stzn58acc24611fea414e8901724ff4510fe8 The /r/AnimePiracy Index]
 
-Latest updates on June 21, 2020, 11:50 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
+Latest update on June 25, 2020, 12:25 AM Western Indonesian Time (UTC+7, Asia/Jakarta)
 
 == File Information ==
 
@@ -37,6 +45,12 @@ We using plain text format (<code>.txt</code> and <a href="#About_rydict"><code>
 === About .rydict ===
 
 <code>.rydict</code> is a self-curated wordlist collected from several sources and implement into one file by Ryuuganime itself using plain text format (<code>.txt</code>). Basically helps dictionary/spelling checker extension/app from overhaul by the resources, so it can reduce a lot of memory consumed by the app/extension.
+
+== Cloning, Issuing, and Contributing ==
+Please read [[contributing.wiki]] for more detailed information.
+
+== Code of Conduct ==
+This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. For detailed information, read [[CODE_OF_CONDUCT.wiki]].
 
 == License ==
 

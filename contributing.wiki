@@ -1,0 +1,115 @@
+= Contributing to animanga-wordlist =
+Hello and thanks for taking your time to contribute!
+
+The following is a set of guidelines for contributing to animanga-wordlist. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+
+__TOC__
+
+== Code of Conduct ==
+This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. Please report unacceptable behavior to [mailto:nattadasu@my.com nattadasu@my.com].
+
+== Getting Started ==
+
+=== Extensions, Applications, and Services Used ===
+* [https://webscraper.io/ Web Scraper] for Google Chrome Browser to scraping HTML data from sites.
+* Microsoft Office 365 Excel for removing duplicates and sorting as A-Z.
+* [https://www.gunamoi.com.au/soft/savejson2csv/index.html Gunamoi Software SaveJson2CSV] for converting from JSON to CSV (ANSI encoding).
+* [https://code.visualstudio.com/ Microsoft Visual Studio Code] for MediaWiki editing.
+
+=== Sites Accessibility ===
+As we mentioned on [[readme.wiki]], we using several website for scraping data. Make sure you have an access to the site, or use API to access.
+
+This is a table which sites are being and can not be used by this repository:
+{|
+!Sites
+!Link
+!Used data
+!Scraping
+|-
+|AniDB
+|https://anidb.net
+|[[/anime|anime]], [[/charas|characters]]
+|Scrape-able with extension
+|-
+|AniList
+|https://anilist.co
+|''Work in Progress''
+|Need to use API for scraping
+|-
+|Anime-Planet
+|https://anime-planet.com
+|[[/anime|anime]], [[/manga|manga]], [[/studios|studios]]
+|Scrape-able with extension
+|-
+|Anime News Network
+|https://animenewsnetwork.net
+|''Null''
+|Un-scrape-able
+|-
+|AniSearch
+|https://anisearch.com ''or'' https://anisearch.de
+|[[/anime|anime]], [[/manga|manga]], [[/charas|characters]]
+|Scrape-able with extension
+|-
+|Kitsu
+|https://kitsu.io
+|''Work in Progress''
+|Need to use API for scraping
+|-
+|MyAnimeList
+|https://myanimelist.net
+|[[/anime|anime]], [[/manga|manga]]
+|Scrape-able with extension
+|-
+|Notify.moe
+|https://notify.moe
+|''Work in Progress''
+|Need to use API for scraping
+|-
+|Shikimori
+|https://shikimori.one ''or'' https://shikimori.org
+|[[/anime|anime]], [[/manga|manga]]
+|Scrape-able with extension
+|}
+
+== Commit and Pull Request ==
+
+=== Cloning Repository ===
+To clone this repository you need [https://git-scm.com/downloads Git] installed on your end and the repository need to be forked to your GitHub account. From your command line:
+ '''git''' <nowiki>clone https://github.com/<YOUR USERNAME>/animanga-wordlist</nowiki>
+
+=== Naming a File ===
+There is simple guideline for naming a file:
+<pre>
+category/siteName-date.ext
+</pre>
+Where:
+;category
+: Defining which data are scraped of what category.
+: Available arguments:
+:: <code>anime</code>, <code>casts</code>, <code>charas</code>, <code>manga</code>, <code>producers</code>, <code>sites</code>, and <code>studios</code>.
+
+;siteName
+: Defining which site used for scraping data. Using [https://en.wikipedia.org/wiki/Camel_case camelCase].
+: Available arguments, at the moment:
+:: <code>aniDb</code>, <code>aniList</code>, <code>animePlanet</code>, <code>animeNewsNetwork</code>, <code>aniSearch</code>, <code>aod</code>, <code>kitsu</code>, <code>myAnimeList</code>, <code>notifyMoe</code>, and <code>shikimori</code>.
+
+;date
+: Defining when data was scraped from site. Using <code>MMYYYY</code> pattern.
+
+;ext
+: Defining what file extension being used. Default: plain text format (<code>.txt</code>)
+
+=== Commit Changes ===
+There is no strict guidelines for adding commit message. However, the best one is make it "uniform."
+
+We commonly use those for prefix:
+
+*<code>Add</code>
+*:when file is untracked by git.
+*<code>Modify</code> or <code>Fix</code>
+*:when there some line changed by previous.
+*<code>Batch update</code>
+*:when there are plenty of file untracked by git.
+*<code>Update</code>
+*:when some information updated.
