@@ -5,6 +5,10 @@
 ! Link
 ! Word Count
 |-
+|Anime-Planet
+|[https://anime-planet.com Link]
+| style="text-align:center;" | [[animePlanet-062020.txt|48291]]
+|-
 |AniSearch
 |[https://anisearch.com Link (US)] ''or'' [https://anisearch.de Link (DE)]
 | style="text-align:center;" | [[aniSearch-062020.txt|52887]]
@@ -15,5 +19,5 @@
 |-
 |Ryuuganime .rydict
 |[https://ryuuganime.my.id Link]
-| style="text-align:center;" | [[manga-062020.rydict|'''76090''']]
+| style="text-align:center;" | [[manga-062020.rydict|'''94644''']]
 |}

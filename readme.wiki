@@ -4,7 +4,7 @@ Designed for custom dictionary. This repository allows user to add Japanese (and
 
 This repo consists at least, so far:
 * '''28414''' [[/anime|anime]] titles,
-* '''76090''' [[/manga|manga]] titles,
+* '''94644''' [[/manga|manga]] titles,
 * '''518''' [[/studios|studios]],
 * '''<nowiki>#####</nowiki>''' [[/producers|producers]],
 * '''86177''' [[/charas|characters]],
@@ -36,7 +36,7 @@ Here is list of sites we're using for scraping data and other information:
 * '''Sites'''
 *:Ryuuganime, [https://www.justwatch.com/ JustWatch], [https://reelgood.com/ Reelgood], [https://github.com/otakulogy/anime-streaming otakulogy/anime-streaming], [https://github.com/MALSync/MALSync MAL-Sync], [https://docs.zoho.com.au/sheet/open/stzn58acc24611fea414e8901724ff4510fe8 The /r/AnimePiracy Index]
 
-Latest update on June 25, 2020, 12:25 AM Western Indonesian Time (UTC+7, Asia/Jakarta)
+Latest update on June 25, 2020, 8:18 PM Western Indonesian Time (UTC+7, Asia/Jakarta)
 
 == File Information ==
 
