@@ -6,16 +6,16 @@ The following is a set of guidelines for contributing to animanga-wordlist. Thes
 __TOC__
 
 == Code of Conduct ==
-This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|Contributor Covenant Code of Conduct version 2.0]]. By participating, you are expected to uphold this code. Please report unacceptable behavior to [mailto:nattadasu@my.com nattadasu@my.com].
+This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|'''Contributor Covenant Code of Conduct version 2.0''']]. By participating, you are expected to uphold this code. Please report unacceptable behavior to <ins>[mailto:nattadasu@my.com nattadasu@my.com]</ins>.
 
 == Getting Started ==
 
 === Extensions, Applications, and Services Used ===
-* [https://webscraper.io/ Web Scraper] for Google Chrome Browser to scraping HTML data from sites.
-* Microsoft Office 365 Excel for removing duplicates and sorting as A-Z.
-* [https://www.gunamoi.com.au/soft/savejson2csv/index.html Gunamoi Software SaveJson2CSV] for converting from JSON to CSV (ANSI encoding).
-* [https://code.visualstudio.com/ Microsoft Visual Studio Code] for MediaWiki editing.
-* Ron's CSV Editor for CSV editor.
+*[https://webscraper.io/ Web Scraper] for Google Chrome Browser to scraping HTML data from sites.
+*Microsoft Office 365 Excel for removing duplicates and sorting as A-Z.
+*[https://www.gunamoi.com.au/soft/savejson2csv/index.html Gunamoi Software SaveJson2CSV] for converting from JSON to CSV (ANSI encoding).
+*[https://code.visualstudio.com/ Microsoft Visual Studio Code] for MediaWiki editing.
+*Ron's CSV Editor for CSV editor.
 
 === Sites Accessibility ===
 As we mentioned on [[readme.wiki]], we using several website for scraping data. Make sure you have an access to the site, or use API to access.
@@ -91,18 +91,18 @@ category/siteName-date.ext
 </pre>
 '''Note''':
 ;category
-: Defining which data are scraped of what category.<br/>Available arguments:
-:: <code>anime</code>, <code>casts</code>, <code>charas</code>, <code>manga</code>, <code>producers</code>, <code>sites</code>, and <code>studios</code>.
+:Defining which data are scraped of what category.<br/>Available arguments:
+::<code>anime</code>, <code>casts</code>, <code>charas</code>, <code>manga</code>, <code>producers</code>, <code>sites</code>, and <code>studios</code>.
 
 ;siteName
-: Defining which site used for scraping data. Using [https://en.wikipedia.org/wiki/Camel_case camelCase].<br/>Available arguments, at the moment:
-:: <code>aniDb</code>, <code>aniList</code>, <code>animePlanet</code>, <code>animeNewsNetwork</code>, <code>aniSearch</code>, <code>aod</code>, <code>kitsu</code>, <code>myAnimeList</code>, <code>notifyMoe</code>, and <code>shikimori</code>.
+:Defining which site used for scraping data. Using [https://en.wikipedia.org/wiki/Camel_case camelCase].<br/>Available arguments, at the moment:
+::<code>aniDb</code>, <code>aniList</code>, <code>animePlanet</code>, <code>animeNewsNetwork</code>, <code>aniSearch</code>, <code>aod</code>, <code>kitsu</code>, <code>myAnimeList</code>, <code>notifyMoe</code>, and <code>shikimori</code>.
 
 ;date
-: Defining when data was scraped from site. Using <code>MMYYYY</code> pattern.
+:Defining when data was scraped from site. Using <code>MMYYYY</code> pattern.
 
 ;ext
-: Defining what file extension being used. Default: plain text format (<code>.txt</code>)
+:Defining what file extension being used. Default: plain text format (<code>.txt</code>)
 
 === Commit Changes ===
 There is no strict guidelines for adding commit message. However, the best one is make it "uniform."
@@ -120,10 +120,30 @@ We commonly use those for prefix:
 
 === Pulling a Merge Request ===
 
-# Make sure you have required to naming your commit based on <a href="#Commit_Changes">Commit Changes</a> guideline.
-# Name your pull request as<br/><pre>Detail: Comment</pre>'''Note''':
-#; Detail
+#Make sure you have required to naming your commit based on <a href="#Commit_Changes">Commit Changes</a> guideline.
+#Name your pull request as<br/><pre>Detail: Comment</pre>'''Note''':
+#;Detail
 #::Defining what the purpose of this pull request.<br/>Available arguments, at the moment:
 #:::<code>Definition</code>, <code>Category</code>, <code>Fix</code>
-# Click on the green "Send pull request" button to finish creating the pull request.
-# You should now see an open pull request.
+#Click on the green "Send pull request" button to finish creating the pull request.
+#You should now see an open pull request.
+
+== Issuing Suggestion or Problem ==
+
+Got a great idea or found an issue but can not executing as well, or unfamiliar with Git interface? Now, you can relax more because GitHub has a great feature, called [https://github.com/ryuuganime/animanga-wordlist/issues GitHub Issue]. It helps users to "interact" developers with 0 knowledge of coding.
+
+You can send us an issue for we can look for it. 
+
+=== Issuing Suggestion ===
+#Open '''[https://github.com/ryuuganime/animanga-wordlist/issues ryuuganime/animanga-wordlist/issues]''' and tap on '''[https://github.com/ryuuganime/animanga-wordlist/issues/new New Issue]''' button.
+#In title bar, write:<br/><pre>Suggestion: <your comment></pre>
+#Adding additional comment/information would helps us figuring out what you want to suggest with.
+#If you finished writing issue, tap '''Submit new issue'''.
+#You should now see an open issue.
+
+=== Issuing Problem ===
+#Open '''[https://github.com/ryuuganime/animanga-wordlist/issues ryuuganime/animanga-wordlist/issues]''' and tap on '''[https://github.com/ryuuganime/animanga-wordlist/issues/new New Issue]''' button.
+#In title bar, write:<br/><pre><your comment></pre>
+#Adding additional comment/information would helps us figuring out what problem(s) is/are occurred.
+#If you finished writing issue, tap '''Submit new issue'''.
+#You should now see an open issue.

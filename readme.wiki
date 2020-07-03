@@ -2,19 +2,19 @@
 
 Designed for custom dictionary. This repository allows user to add Japanese (and overseas, in the future) animations, comics, novels, characters, casts, producers, and studios words to their personalized spell correction extension nor app. At the moment, we only include romaji (romanized) script for wordlist; Kanji and other script may be listed in the future.
 
+__TOC__
+
 This repo consists at least, so far:
-* '''33283''' [[/anime|anime]] titles,
+* '''32843''' [[/anime|anime]] titles,
 * '''94644''' [[/manga|manga]] titles,
 * '''518''' [[/studios|studios]],
 * '''<nowiki>#####</nowiki>''' [[/producers|producers]],
-* '''116972''' [[/charas|characters]],
+* '''86177''' [[/charas|characters]],
 * '''<nowiki>#####</nowiki>''' [[/casts|seiyuus/casts]], and
 * '''253''' [[/sites|official streaming and information sites]] indexed.
 
 ;'''NOTE'''
 : <ins>Those dictionaries is duplicate-free and directly scraped from sites without filtering</ins>, and some data can be exact same each other since each site do have their own romanization rule for title. Numbers of how much entries included can not be a reference or source for work(s) which required for citing statistical information. 
-
-__TOC__
 
 == Scraping Information ==
 
@@ -40,13 +40,13 @@ Latest update on June 25, 2020, 9:29 PM Western Indonesian Time (UTC+7, Asia/Jak
 
 == File Information ==
 
-We using plain text format (<code>.txt</code> and <a href="#About_rydict"><code>.rydict</code></a>) for dictionaries, and MediaWiki file format (<code>.wiki</code>, <code>.mediawiki</code>) for README and some important information. JSON and YAML files are intended to be used for the machines only.
+We using plain text format (<code>.txt</code> and <a href="#About_rydict"><code>.rydict</code></a>) for dictionaries, and MediaWiki file format (<code>.wiki</code>, <code>.mediawiki</code>) for README and some important information. JSON, YAML, and Markdown (<code>.md</code>) files are intended to be used for the machines and GitHub only.
 
 === About .rydict ===
 
 <code>.rydict</code> is a self-curated wordlist collected from several sources and implement into one file by Ryuuganime itself using plain text format (<code>.txt</code>). Basically helps dictionary/spelling checker extension/app from overhaul by the resources, so it can reduce a lot of memory consumed by the app/extension.
 
-== Cloning, Issuing, and Contributing ==
+== Cloning, Contributing, and Issuing Suggestion/Problem ==
 Please read [[contributing.wiki]] for more detailed information.
 
 == Code of Conduct ==
