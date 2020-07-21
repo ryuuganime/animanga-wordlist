@@ -6,7 +6,7 @@ The following is a set of guidelines for contributing to animanga-wordlist. Thes
 __TOC__
 
 == Code of Conduct ==
-This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|'''Contributor Covenant Code of Conduct version 2.0''']]. By participating, you are expected to uphold this code. Please report unacceptable behavior to <ins>[mailto:nattadasu@my.com nattadasu@my.com]</ins>.
+This project and everyone participating in it is governed by the [[CODE_OF_CONDUCT.wiki|'''Contributor Covenant Code of Conduct version 2.0''']]. By participating, you are expected to uphold this code. Please report unacceptable behavior to <ins>[mailto:contact@ryuuganime.my.id contact@ryuuganime.my.id]</ins>.
 
 == Getting Started ==
 
