@@ -1,9 +1,12 @@
+Column 01
 A&E
 ABC
 Abema.tv
+Abematv
 AcornTV
 Adult Swim
 AHC
+AISPlay
 Akiba Pass
 All 4
 All Warrior
@@ -16,13 +19,18 @@ AniChart
 AniDB
 AniList
 Animal-Planet
+AniMe
 Anime Digital Network
 Anime News Network
 Anime on Demand
 AnimeBeans
 AnimeLab
+AnimeLog
 Anime-Planet
+animeteleto
+AniOne
 Aniplus
+AniPlus Asia
 aniSearch
 AniTele
 Annict
@@ -30,6 +38,7 @@ Apple TV+
 AsianCrush
 Bahamut Anime Crazy
 Bandai Channel
+Bandai Spirits
 BBC America
 Best Ever
 Best of British TV
@@ -51,14 +60,18 @@ Cinemax
 CinePride
 CMT
 CNBC
+Coalise
 Comedy Central
 Comedy Central Now
 Comedy Dynamics
+Comic Festa Anime Zone
 ConTV
 Cooking Channel
+Coolmic
 Crunchyroll
 Curiosity Stream
 CW Seed
+d Anime Store
 Daring Docs
 DC Universe
 Destination America
@@ -141,6 +154,7 @@ Logo
 Machinima
 Mangas
 Maxdome
+MBS Dougaizm
 MHz Choice
 Microsoft
 Midnight Pulp
@@ -186,6 +200,7 @@ Science
 ScreamBox
 ScreenJunkie
 Secrets of Cinema
+Selecta Vision
 Shikimori
 Shout Factory TV
 Showtime
@@ -206,11 +221,13 @@ Syfy
 Tastemade
 TBS
 TCM
+Telasa
 Telemundo
+Tencent Video
 The Criterion Channel
 The CW
-The TV Database
 The Movie Database
+The TV Database
 TLC
 TMDB
 TNT
@@ -226,6 +243,7 @@ Tubi TV
 TV Time
 TVDB
 TVLand
+TVNOW
 U-NEXT
 Up Faith Family
 Urban Movie Channel
@@ -237,6 +255,7 @@ Videopass
 Viewster
 Vimeo
 Viu
+VIZ
 VRV
 Vudu
 VVVVID
@@ -245,11 +264,13 @@ Warriors Gangsters
 Watcha
 Watchbox
 WE
+WeTV
 Wikipedia
 Wolfe
 WWE
 Xive TV
 Yahoo! View
+Yamato Animation
 Yoga Anytime Channel
 YouTube
 YouTube Premium
