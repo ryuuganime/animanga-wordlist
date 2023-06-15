@@ -1,3 +1,9 @@
+= Stale Notification =
+
+Whoa, it has been 3 years since last commits. 💀
+
+But don't worry, we will plan to automate this in the future! Plus with additional sources from Kaize and else. For better compatibility, newer changes will be available in another branch until we can consider it stable.
+
 = Ryuuganime animanga-wordlist =
 
 Designed for custom dictionary. This repository allows user to add Japanese (and overseas, in the future) animations, comics, novels, characters, casts, producers, and studios words to their personalized spell correction extension nor app. At the moment, we only include romaji (romanized) script for wordlist; Kanji and other script may be listed in the future.
