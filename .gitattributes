@@ -1,0 +1,3 @@
+*.rydict          linguist-language=text linguist-detectable
+*.txt             linguist-detectable
+*.wiki            linguist-detectable
