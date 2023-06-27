@@ -1,17 +1,18 @@
 {
-    "cSpell.words": [
-        "nowiki",
-        "romaji",
-        "ryuuganime",
-        "seiyuu",
-        "seiyuus",
-        "submodule",
-        "wordlist"
+    "python.analysis.typeCheckingMode": "strict",
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "80",
+        "--in-place",
+        "--aggressive",
+        "--aggressive"
     ],
-    "cSpell.enableFiletypes": [
-        "mediawiki"
+    "python.linting.pylintArgs": [
+        "--init-hook",
+        "import sys; sys.path.insert(0, '.')"
     ],
-    "cSpell.ignoreWords": [
-        "animanga"
-    ]
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.formatting.provider": "none",
 }
