@@ -1,2 +1,4 @@
 autopep8
+bs4
+fake-useragent
 requests
