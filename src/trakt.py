@@ -38,7 +38,7 @@ class Trakt:
         data = self._fetch_trakt_data()
         with open("raw/trakt.json", "w", encoding="utf-8") as f:
             dump(data, f, ensure_ascii=False)
-        print("Trakt", "Data saved to file")
+        print("Trakt", "Data saved to file", "Success", False)
         self._data = deepcopy(data)
         return self._data
 
