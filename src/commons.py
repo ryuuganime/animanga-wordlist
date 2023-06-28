@@ -22,6 +22,7 @@ def pretty_print(
     Args:
         platform (str): Platform name
         message (str): Message
+        status (Literal["Success", "Error", "Warning", "Info", "Running"], optional): Status. Defaults to "Running".
         cr (bool, optional): Carriage return. Defaults to True.
     """
     # only grab \w characters, remove everything else including spaces, if any
