@@ -22,7 +22,7 @@ class Annict:
         self._headers = {
             "User-Agent": USER_AGENT
         }
-        self._data = []
+        self._data: list[dict[str, Any]] = []
 
     def _fetch_annict_data(self, page: int, limit: int = 50) -> dict[str, Any]:
         """
@@ -59,7 +59,7 @@ class Annict:
         total_count = counter["total_count"]
 
         # fetch all data, loop through pages by 50 items
-        data = []
+        data: list[dict[str, Any]] = []
         for page in range(1, total_count // 50 + 2):
             # if fails, retry up to 3 times
             for _ in range(3):
@@ -69,10 +69,10 @@ class Annict:
                     time.sleep(3)
                     break
                 except Exception:
-                    print("Annict", f"Failed to fetch data on page {page}, retrying...", False)
+                    print("Annict", f"Failed to fetch data on page {page}, retrying...", "Warning", False)
                     continue
             else:
-                print("Annict", f"Failed to fetch data on page {page}, skipping...", False)
+                print("Annict", f"Failed to fetch data on page {page}, skipping...", "Error", False)
                 continue
         self._data = deepcopy(data)
         print("Annict", f"Fetched {len(data)} items")

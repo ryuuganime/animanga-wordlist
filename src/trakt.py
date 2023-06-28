@@ -15,21 +15,24 @@ class Trakt:
         self._base_url = "https://raw.githubusercontent.com/nattadasu/animeApi/v2/ati.raw.json"
         self._data = []
 
-    def _fetch_trakt_data(self) -> dict[str, Any]:
+    def _fetch_trakt_data(self) -> list[dict[str, Any]]:
         """
         Fetch data from Trakt via AnimeAPI
 
         Returns:
-            dict[str, Any]: JSON data
+            list[dict[str, Any]]: JSON data
         """
         data = requests.get(
             f"{self._base_url}"
         ).text
         return loads(data)
 
-    def save_trakt_data(self) -> list[dict]:
+    def save_trakt_data(self) -> list[dict[str, Any]]:
         """
         Save data to file
+
+        Returns:
+            list[dict[str, Any]]: JSON data
         """
         print("Trakt", "Saving data to file...")
         data = self._fetch_trakt_data()
@@ -40,9 +43,7 @@ class Trakt:
         return self._data
 
     def close(self) -> None:
-        """
-        Close Trakt via AnimeAPI data fetcher
-        """
+        """Close Trakt via AnimeAPI data fetcher"""
         self._data = []
 
 __all__ = ["Trakt"]
