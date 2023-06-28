@@ -43,6 +43,6 @@ def pretty_print(
             tag_code = "\033[1;36m[RUNNING]\033[0m"
 
     if cr:
-        print(f"\033[2K\r{ansi_code}[{platform}]\033[0m {tag_code} {message}", end="")
+        print(f"\033[2K\r{ansi_code}[{platform}]\033[0m {tag_code} {message}\r", end="")
     else:
         print(f"\n{ansi_code}[{platform}]\033[0m {tag_code} {message}")
