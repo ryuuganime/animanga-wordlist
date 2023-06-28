@@ -36,11 +36,11 @@ class KaizeAnime:
         Returns:
             list[dict[str, Any]]: JSON data
         """
-        print("Kaize", "Saving data to file...")
+        print("Kaize", "Saving Anime data to file...")
         data = self._fetch_kaize_data()
         with open("raw/kaize_anime.json", "w", encoding="utf-8") as f:
             dump(data, f, ensure_ascii=False)
-        print("Kaize", "Data saved to file", "Success", False)
+        print("Kaize", "Anime data saved to file", "Success", False)
         self._data = deepcopy(data)
         return data
 
@@ -89,7 +89,7 @@ class KaizeManga:
 
         # Check in hundreds
         while True:
-            print("Kaize", f"Checking in hundreds, page {kzp}")
+            print("Kaize", f"Checking manga index in hundreds, page {kzp}")
             html = make_request(kzp)
             data = extract_data(html)
             if is_valid_page(data):
@@ -102,7 +102,7 @@ class KaizeManga:
         # Check in tens
         kzp = kzpg + 10
         while True:
-            print("Kaize", f"Checking in tens, page {kzp}")
+            print("Kaize", f"Checking manga index in tens, page {kzp}")
             html = make_request(kzp)
             data = extract_data(html)
             if is_valid_page(data):
@@ -115,7 +115,7 @@ class KaizeManga:
         # Check in ones
         kzp = kzpg + 1
         while True:
-            print("Kaize", f"Checking in ones, page {kzp}")
+            print("Kaize", f"Checking manga index in ones, page {kzp}")
             html = make_request(kzp)
             data = extract_data(html)
             if is_valid_page(data):
@@ -125,7 +125,7 @@ class KaizeManga:
             else:
                 break
 
-        print("Kaize", f"Done checking, total pages: {kzpg}", "Success", False)
+        print("Kaize", f"Done checking, total pages in manga index: {kzpg}", "Success", False)
 
         return kzpg
 
@@ -164,11 +164,11 @@ class KaizeManga:
         Returns:
             list[dict[str, Any]]: Kaize's Manga index
         """
-        print("Kaize", "Saving data to file...")
+        print("Kaize", "Saving Manga data to file...", "Info", False)
         pages = self._check_available_page()
         result: list[dict[str, Any]] = []
         for page in range(1, pages + 1):
-            print("Kaize", f"Fetching page {page} of {pages}")
+            print("Kaize", f"Fetching manga, page {page} of {pages}")
             result.extend(self._fetch_kaize_index(page))
             sleep(1)
         with open("raw/kaize_manga.json", "w", encoding="utf-8") as f:

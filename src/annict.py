@@ -7,6 +7,7 @@ from typing import Any
 import requests
 
 from const import USER_AGENT
+
 from .commons import pretty_print as print
 
 
@@ -77,7 +78,7 @@ class Annict:
                 print("Annict", f"Failed to fetch data on page {page}, skipping...", "Error", False)
                 continue
         self._data = deepcopy(data)
-        print("Annict", f"Fetched {len(data)} items")
+        print("Annict", f"Fetched {len(data)} items", "Success", False)
         return data
 
     # save data to file once fetched
