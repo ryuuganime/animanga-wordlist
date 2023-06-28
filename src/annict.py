@@ -55,8 +55,10 @@ class Annict:
         """
 
         # check total count
+        print("Annict", "Fetching total count", "Running")
         counter = self._fetch_annict_data(1, 1)
         total_count = counter["total_count"]
+        print("Annict", f"Total count: {total_count}, pages: {total_count // 50 + 1}", "Success", False)
 
         # fetch all data, loop through pages by 50 items
         data: list[dict[str, Any]] = []
