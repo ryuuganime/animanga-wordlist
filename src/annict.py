@@ -47,7 +47,7 @@ class Annict:
             headers=self._headers
         ).json()
 
-    def fetch_annict_data_all(self) -> list[dict[str, Any]]:
+    def fetch_annict_data(self) -> list[dict[str, Any]]:
         """
         Fetch all data from Annict API
 
@@ -79,18 +79,9 @@ class Annict:
                 continue
         self._data = deepcopy(data)
         print("Annict", f"Fetched {len(data)} items", "Success", False)
-        return data
-
-    # save data to file once fetched
-    def save_data(self, path: str = "raw/annict.json") -> None:
-        """
-        Save data to file
-
-        Args:
-            path (str, optional): Path to file. Defaults to "annict.json".
-        """
-        with open(path, "w") as file:
+        with open("raw/annict.json", "w") as file:
             dump(self._data, file)
+        return data
 
     def close(self) -> None:
         """Close Annict API wrapper"""

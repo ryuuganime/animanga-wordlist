@@ -180,4 +180,24 @@ class KaizeManga:
         """Close Kaize's Manga index scraper"""
         self._data = []
 
-__all__ = ["KaizeAnime", "KaizeManga"]
+class Kaize:
+    """Generic Wrapper for KaizeAnime and KaizeManga"""
+
+    def __init__(self) -> None:
+        """Initialize Kaize Wrapper"""
+        self._anime = KaizeAnime()
+        self._manga = KaizeManga()
+
+    def save_data(self) -> list[list[dict[str, Any]]]:
+        """Save data to file"""
+        anime = self._anime.save_kaize_data()
+        manga = self._manga.save_kaize_data()
+
+        return [anime, manga]
+
+    def close(self) -> None:
+        """Close Kaize Wrapper"""
+        self._anime.close()
+        self._manga.close()
+
+__all__ = ["KaizeAnime", "KaizeManga", "Kaize"]

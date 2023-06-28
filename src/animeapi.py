@@ -1,5 +1,5 @@
-from json import dump, loads
 from copy import deepcopy
+from json import dump, loads
 from typing import Any
 
 import requests

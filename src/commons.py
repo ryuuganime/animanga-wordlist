@@ -34,11 +34,11 @@ def pretty_print(
         case "Success":
             tag_code = "\033[1;32m[SUCCESS]\033[0m"
         case "Error":
-            tag_code = "\033[1;31m[ERROR]\033[0m"
+            tag_code = "\033[1;31m[ ERROR ]\033[0m"
         case "Warning":
             tag_code = "\033[1;33m[WARNING]\033[0m"
         case "Info":
-            tag_code = "\033[1;34m[INFO]\033[0m"
+            tag_code = "\033[1;34m[I N F O]\033[0m"
         case "Running":
             tag_code = "\033[1;36m[RUNNING]\033[0m"
 
