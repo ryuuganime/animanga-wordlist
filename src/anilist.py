@@ -1,10 +1,13 @@
-import requests
+"""AniList API"""
+
 from time import sleep
 from json import dump
 from typing import Any, Literal
 
-from .commons import pretty_print as print
+import requests
+
 from const import USER_AGENT
+from src.commons import pretty_print as print_
 
 
 class AniList:
@@ -18,13 +21,13 @@ class AniList:
             "Accept": "application/json"
         }
 
-    def _fetch_data(self, query: str, variables: dict[str, str]) -> dict[str, str]:
+    def _fetch_data(self, query: str, variables: dict[str, str | int]) -> dict[str, str]:
         """
         Fetch data from AniList GraphQL API
 
         Args:
             query (str): Query
-            variables (dict[str, str]): Variables
+            variables (dict[str, str | int]): Variables
 
         Returns:
             dict[str, str]: JSON data
@@ -35,15 +38,20 @@ class AniList:
                 "query": query,
                 "variables": variables
             },
-            headers=self._headers
+            headers=self._headers,
+            timeout=None
         )
         if req.status_code == 200:
             json = req.json()
             return json
-        else:
-            raise ConnectionError(f"AniList returned {req.status_code} status code")
+        raise ConnectionError(f"AniList returned {req.status_code} status code")
 
-    def _fetch_media(self, media_type: Literal["ANIME", "MANGA"], page: int = 1, per_page: int = 50) -> dict[str, str]:
+    def _fetch_media(
+        self,
+        media_type: Literal["ANIME", "MANGA"],
+        page: int = 1,
+        per_page: int = 50
+    ) -> dict[str, Any]:
         """
         Fetch media from AniList GraphQL API
 
@@ -55,31 +63,31 @@ class AniList:
         Returns:
             dict[str, str]: JSON data
         """
-        query = """
-        query ($page: Int, $perPage: Int) {
-            Page (page: $page, perPage: $perPage) {
-                pageInfo {
+        query = f"""
+        query ($page: Int, $perPage: Int) {{
+            Page (page: $page, perPage: $perPage) {{
+                pageInfo {{
                     total
                     perPage
                     currentPage
                     lastPage
                     hasNextPage
-                }
-                media (type: %s, sort: TITLE_ROMAJI) {
+                }}
+                media (type: {media_type}, sort: TITLE_ROMAJI) {{
                     id
-                    title {
+                    title {{
                         romaji
                         english
                         native
-                    }
+                    }}
                     idMal
                     synonyms
-                }
-            }
-        }
-        """ % media_type
+                }}
+            }}
+        }}
+        """
 
-        variables = {
+        variables: dict[str, int | str] = {
             "page": page,
             "perPage": per_page
         }
@@ -97,7 +105,7 @@ class AniList:
         total = 0
         data: list[dict[str, Any]] = []
         while True:
-            print("AniList", f"Fetching manga, page {page}...", "Running")
+            print_("AniList", f"Fetching manga, page {page}...", "Running")
             entry = self._fetch_media("MANGA", page)
             data.extend(entry["data"]["Page"]["media"])
             if entry["data"]["Page"]["pageInfo"]["hasNextPage"]:
@@ -106,7 +114,7 @@ class AniList:
                 break
             total += len(entry["data"]["Page"]["media"])
             sleep(self._rate_limit)
-        print("AniList", f"Fetched {total} manga", "Success", False)
+        print_("AniList", f"Fetched {total} manga", "Success", False)
         return data
 
     def _loop_fetch_anime(self) -> list[dict[str, Any]]:
@@ -120,7 +128,7 @@ class AniList:
         total = 0
         data: list[dict[str, Any]] = []
         while True:
-            print("AniList", f"Fetching anime, page {page}...", "Running")
+            print_("AniList", f"Fetching anime, page {page}...", "Running")
             entry = self._fetch_media("ANIME", page)
             data.extend(entry["data"]["Page"]["media"])
             if entry["data"]["Page"]["pageInfo"]["hasNextPage"]:
@@ -129,11 +137,11 @@ class AniList:
                 break
             total += len(entry["data"]["Page"]["media"])
             sleep(self._rate_limit)
-        print("AniList", f"Fetched {total} anime", "Success", False)
+        print_("AniList", f"Fetched {total} anime", "Success", False)
         return data
 
 
-    def save_anilist_data(self) -> list[list[dict[str, any]]]:
+    def save_anilist_data(self) -> list[list[dict[str, Any]]]:
         """
         Save AniList data to JSON file
 
@@ -141,15 +149,15 @@ class AniList:
             list[list[dict[str, any]]]: List of anime and manga
         """
         anime = self._loop_fetch_anime()
-        print("AniList", "Saving anime data...")
-        with open("raw/anilist_anime.json", "w", encoding="utf-8") as f:
-            dump(anime, f, ensure_ascii=False)
-        print("AniList", "Saved anime data", "Success", False)
+        print_("AniList", "Saving anime data...")
+        with open("raw/anilist_anime.json", "w", encoding="utf-8") as file:
+            dump(anime, file, ensure_ascii=False)
+        print_("AniList", "Saved anime data", "Success", False)
         manga = self._loop_fetch_manga()
-        print("AniList", "Saving manga data...")
-        with open("raw/anilist_manga.json", "w", encoding="utf-8") as f:
-            dump(manga, f, ensure_ascii=False)
-        print("AniList", "Saved manga data", "Success", False)
+        print_("AniList", "Saving manga data...")
+        with open("raw/anilist_manga.json", "w", encoding="utf-8") as file:
+            dump(manga, file, ensure_ascii=False)
+        print_("AniList", "Saved manga data", "Success", False)
 
         return [anime, manga]
 

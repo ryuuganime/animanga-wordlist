@@ -1,10 +1,12 @@
+"""Trakt via AnimeAPI data fetcher"""
+
 from json import dump, loads
 from copy import deepcopy
 from typing import Any
 
 import requests
 
-from .commons import pretty_print as print
+from src.commons import pretty_print as print_
 
 
 class Trakt:
@@ -23,7 +25,8 @@ class Trakt:
             list[dict[str, Any]]: JSON data
         """
         data = requests.get(
-            f"{self._base_url}"
+            f"{self._base_url}",
+            timeout=None
         ).text
         return loads(data)
 
@@ -34,11 +37,11 @@ class Trakt:
         Returns:
             list[dict[str, Any]]: JSON data
         """
-        print("Trakt", "Saving data to file...")
+        print_("Trakt", "Saving data to file...")
         data = self._fetch_trakt_data()
-        with open("raw/trakt.json", "w", encoding="utf-8") as f:
-            dump(data, f, ensure_ascii=False)
-        print("Trakt", "Data saved to file", "Success", False)
+        with open("raw/trakt.json", "w", encoding="utf-8") as file:
+            dump(data, file, ensure_ascii=False)
+        print_("Trakt", "Data saved to file", "Success", False)
         self._data = deepcopy(data)
         return self._data
 

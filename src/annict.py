@@ -1,3 +1,5 @@
+"""Annict API wrapper"""
+
 import os
 import time
 from copy import deepcopy
@@ -8,7 +10,7 @@ import requests
 
 from const import USER_AGENT
 
-from .commons import pretty_print as print
+from src.commons import pretty_print as print_
 
 
 class Annict:
@@ -44,7 +46,8 @@ class Annict:
                 "per_page": limit,
                 "access_token": self._access_token
             },
-            headers=self._headers
+            headers=self._headers,
+            timeout=None
         ).json()
 
     def fetch_annict_data(self) -> list[dict[str, Any]]:
@@ -56,10 +59,14 @@ class Annict:
         """
 
         # check total count
-        print("Annict", "Fetching total count", "Running")
+        print_("Annict", "Fetching total count", "Running")
         counter = self._fetch_annict_data(1, 1)
         total_count = counter["total_count"]
-        print("Annict", f"Total count: {total_count}, pages: {total_count // 50 + 1}", "Success", False)
+        print_(
+            "Annict",
+            f"Total count: {total_count}, pages: {total_count // 50 + 1}",
+            "Success",
+            False)
 
         # fetch all data, loop through pages by 50 items
         data: list[dict[str, Any]] = []
@@ -67,19 +74,29 @@ class Annict:
             # if fails, retry up to 3 times
             for _ in range(3):
                 try:
-                    print("Annict", f"Fetching page {page} of {total_count // 50 + 1}")
+                    print_("Annict", f"Fetching page {page} of {total_count // 50 + 1}")
                     data.extend(self._fetch_annict_data(page)["works"])
                     time.sleep(3)
                     break
+                # pylint: disable=broad-except
                 except Exception:
-                    print("Annict", f"Failed to fetch data on page {page}, retrying...", "Warning", False)
+                    print_(
+                        "Annict",
+                        f"Failed to fetch data on page {page}, retrying...",
+                        "Warning",
+                        False)
                     continue
+                # pylint: enable=broad-except
             else:
-                print("Annict", f"Failed to fetch data on page {page}, skipping...", "Error", False)
+                print_(
+                    "Annict",
+                    f"Failed to fetch data on page {page}, skipping...",
+                    "Error",
+                    False)
                 continue
         self._data = deepcopy(data)
-        print("Annict", f"Fetched {len(data)} items", "Success", False)
-        with open("raw/annict.json", "w") as file:
+        print_("Annict", f"Fetched {len(data)} items", "Success", False)
+        with open("raw/annict.json", "w", encoding="utf-8") as file:
             dump(self._data, file)
         return data
 

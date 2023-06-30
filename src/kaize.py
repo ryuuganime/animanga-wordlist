@@ -170,7 +170,7 @@ class KaizeManga:
         for page in range(1, pages + 1):
             print("Kaize", f"Fetching manga, page {page} of {pages}")
             result.extend(self._fetch_kaize_index(page))
-            sleep(1)
+            # sleep(1)
         with open("raw/kaize_manga.json", "w", encoding="utf-8") as f:
             dump(result, f, ensure_ascii=False)
         print("Kaize", "Data saved to file", "Success", False)

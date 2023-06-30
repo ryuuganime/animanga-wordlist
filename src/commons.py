@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 from typing import Literal
 
 from .ansi import get_platform_rgb, return_ansi_code
@@ -42,7 +43,10 @@ def pretty_print(
         case "Running":
             tag_code = "\033[1;36m[RUNNING]\033[0m"
 
+    now = datetime.now().strftime("%H:%M:%S")
+    final = f"\033[90m[{now}]\033[0m {ansi_code}[{platform}]\033[0m {tag_code} {message}"
+
     if cr:
-        print(f"\033[2K\r{ansi_code}[{platform}]\033[0m {tag_code} {message}\r", end="")
+        print(f"\033[2K\r{final}\r", end="")
     else:
-        print(f"\n{ansi_code}[{platform}]\033[0m {tag_code} {message}")
+        print(f"\n{final}")

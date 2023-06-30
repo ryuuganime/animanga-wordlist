@@ -1,3 +1,5 @@
+"""Module for ANSI codes"""
+
 platform_rgb: dict[str, int] = {
     "allcin": 0xEC0A0A,
     "anidb": 0x2A2F46,
@@ -26,6 +28,7 @@ platform_rgb: dict[str, int] = {
     "tvdb": 0x6CD491,
     "tvtime": 0xFBD737,
 }
+"""Table of platform RGB values"""
 
 def int_to_rgb(value: int) -> tuple[int, int, int]:
     """
@@ -64,8 +67,8 @@ def return_ansi_code(hex_code: int, background: bool = False) -> str:
         str: ANSI code
     """
 
-    r, g, b = int_to_rgb(hex_code)
+    red, green, blue = int_to_rgb(hex_code)
 
     if background:
-        return f"\033[48;2;{r};{g};{b}m"
-    return f"\033[38;2;{r};{g};{b}m"
+        return f"\033[48;2;{red};{green};{blue}m"
+    return f"\033[38;2;{red};{green};{blue}m"

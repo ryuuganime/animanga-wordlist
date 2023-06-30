@@ -1,10 +1,12 @@
+"""AnimeApi data fetcher"""
+
 from copy import deepcopy
 from json import dump, loads
 from typing import Any
 
 import requests
 
-from .commons import pretty_print as print
+from src.commons import pretty_print as print_
 
 
 class AnimeApi:
@@ -23,7 +25,8 @@ class AnimeApi:
             list[dict[str, Any]]: JSON data
         """
         data = requests.get(
-            f"{self._base_url}"
+            f"{self._base_url}",
+            timeout=None
         ).text
         return loads(data)
 
@@ -34,11 +37,11 @@ class AnimeApi:
         Returns:
             list[dict[str, Any]]: JSON data
         """
-        print("AnimeApi", "Saving data to file...")
+        print_("AnimeApi", "Saving data to file...")
         data = self._fetch_animeapi_data()
-        with open("raw/animeapi.json", "w", encoding="utf-8") as f:
-            dump(data, f, ensure_ascii=False)
-        print("AnimeApi", "Data saved to file", "Success", False)
+        with open("raw/animeapi.json", "w", encoding="utf-8") as file:
+            dump(data, file, ensure_ascii=False)
+        print_("AnimeApi", "Data saved to file", "Success", False)
         self._data = deepcopy(data)
         return self._data
 

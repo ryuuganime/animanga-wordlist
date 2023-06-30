@@ -1,13 +1,15 @@
-import requests
-from json import dump
-from typing import Any, Literal
-from time import sleep
+"""MyAnimeList data fetcher from Jikan API"""
 
-from .commons import pretty_print as print
+from json import dump
+from time import sleep
+from typing import Any, Literal
+
+import requests
+
 from const import USER_AGENT
 
-class ConnectionError(Exception):
-    """Connection Error"""
+from src.commons import pretty_print as print_
+
 
 class MyAnimeList:
     """Parse MyAnimeList data from Jikan API"""
@@ -54,30 +56,42 @@ class MyAnimeList:
                 "page": page,
                 "limit": limit
             },
-            headers=self._headers
+            headers=self._headers,
+            timeout=None
         )
         if req.status_code == 200:
             json = req.json()
             return json
         raise ConnectionError(f"Status code: {req.status_code}, Reason: {req.reason}")
 
-    def _fetcher(self, path: Literal["anime", "manga", "characters", "people", "producers", "magazines"]) -> list[dict[str, Any]]:
+    def _fetcher(
+        self,
+        path: Literal["anime", "manga", "characters", "people", "producers", "magazines"]
+    ) -> list[dict[str, Any]]:
         """Do a fetch"""
-        print("MyAnimeList", f"Checking total count for {path}")
+        print_("MyAnimeList", f"Checking total count for {path}")
         entries = self._fetch_data(path=path, limit=1)
         total_count = entries["pagination"]["items"]["total"]
         pages = total_count // 50 + 1
-        print("MyAnimeList", f"Total count for {path}: {total_count}, pages: {pages}", "Success", False)
+        print_(
+            "MyAnimeList",
+            f"Total count for {path}: {total_count}, pages: {pages}",
+            "Success",
+            False)
         sleep(self._rate_limit)
         data: list[dict[str, Any]] = []
         for page in range(1, pages + 1):
-            print("MyAnimeList", f"Fetching {path} data, page {page} of {pages}")
+            print_("MyAnimeList", f"Fetching {path} data, page {page} of {pages}")
             data += self._fetch_data(path=path, page=page)["data"]
             sleep(self._rate_limit)
-        print("MyAnimeList", f"{path.capitalize()} data fetched, total pages: {pages}", "Success", False)
+        print_(
+            "MyAnimeList",
+            f"{path.capitalize()} data fetched, total pages: {pages}",
+            "Success",
+            False)
         # save data
-        with open(f"raw/myanimelist_{path}.json", "w", encoding="utf-8") as f:
-            dump(data, f, ensure_ascii=False)
+        with open(f"raw/myanimelist_{path}.json", "w", encoding="utf-8") as file:
+            dump(data, file, ensure_ascii=False)
         sleep(2)
         return data
 
