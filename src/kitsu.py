@@ -180,7 +180,7 @@ class Kitsu:
 
         anime = self.get_anime()
         with open("raw/kitsu_anime.json", "w", encoding="utf-8") as file:
-            dump(anime, file, ensure_ascii=False, indent=4)
+            dump(anime, file, ensure_ascii=False)
         print_(
             "Kitsu",
             "Anime data has been saved",
@@ -188,7 +188,7 @@ class Kitsu:
             False)
         manga = self.get_manga()
         with open("raw/kitsu_manga.json", "w", encoding="utf-8") as file:
-            dump(manga, file, ensure_ascii=False, indent=4)
+            dump(manga, file, ensure_ascii=False)
         print_(
             "Kitsu",
             "Manga data has been saved",
